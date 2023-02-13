@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<style>
+    div {
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        <div class="contanier">
+            <h1>Welcome to Manga World ❤️</h1>
+            <hr>
+            <h3>To continue please login</h3>
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Enter your name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Enter your email" name="email">
+            <label for="password">Password</label>
+            <input type="password" placeholder="Enter your password" name="password">
+            <label for="password">Re-password</label>
+            <input type="password" placeholder="Re-enter your password" name="repassword"><br>
+
+            <button type="submit">Submit</button>
+
+
+
+
+
+
+
+        </div>
+    </form>
+</body>
+
+</html>

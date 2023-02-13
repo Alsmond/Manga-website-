@@ -1,0 +1,24 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Here you can download managa</h1>
+    <div class="contanier">
+
+
+        {% for i in anime.files.all %}
+        <div class="box" style="margin-top: 20px;">
+            <label for="download">Download here: {{anime.manga.url}}</label>
+            <a href="http://127.0.0.1:8000/{{i.pdf.url}}" download>Download</a>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+
+</html>
